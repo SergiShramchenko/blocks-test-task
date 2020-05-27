@@ -1,0 +1,249 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-indent: 10px;
+}
+
+/* CONTAINER */
+
+.container {
+  width: 95%;
+  height: 80vh;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    height: 800px;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    height: 920px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+}
+
+/* /- CONTAINER -/ */
+
+/* BLOCK ONE */
+
+.block-one {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 992px) {
+  .block-one {
+    width: 95%;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .block-one {
+    margin-bottom: 20px;
+  }
+}
+
+/* BLOCK ONE FIRST CHILD */
+
+.block-one-first-child {
+  height: 40%;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .block-one-first-child {
+    margin-bottom: 20px;
+  }
+}
+
+.block-one-first-child__item-a {
+  width: 40%;
+  background-color: rgb(240, 121, 121);
+}
+.block-one-first-child__item-b {
+  width: 60%;
+  margin-left: 15px;
+  background-color: rgb(170, 243, 141);
+}
+
+@media screen and (max-width: 768px) {
+  .block-one-first-child__item-b {
+    margin-left: 20px;
+  }
+}
+
+/* /- BLOCK ONE FIRST CHILD -/ */
+
+/* BLOCK ONE SECOND CHILD */
+
+.block-one-second-child {
+  height: 60%;
+  display: flex;
+}
+
+.block-one-second-child-first-block {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.block-one-second-child-first-block__item-c {
+  height: 50%;
+  margin-bottom: 15px;
+  background-color: rgb(245, 243, 115);
+}
+
+@media screen and (max-width: 768px) {
+  .block-one-second-child-first-block__item-c {
+    margin-bottom: 20px;
+  }
+}
+
+.block-one-second-child-first-block__item-d {
+  height: 50%;
+  background-color: rgb(126, 199, 241);
+}
+
+.block-one-second-child-second-block {
+  width: 40%;
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .block-one-second-child-second-block {
+    margin-left: 20px;
+  }
+}
+
+.block-one-second-child-second-block__item-e {
+  height: 100%;
+  background-color: rgb(236, 79, 229);
+}
+
+/* /- BLOCK ONE SECOND CHILD -/ */
+
+/* /- BLOCK ONE -/ */
+
+/* BLOCK TWO */
+
+.block-two {
+  width: 50%;
+  display: flex;
+}
+
+@media screen and (max-width: 992px) {
+  .block-two {
+    width: 95%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .block-two {
+    width: 95%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* BLOCK TWO FIRST CHILD */
+
+.block-two-first-child {
+  width: 50%;
+}
+
+@media screen and (max-width: 992px) {
+  .block-two-first-child {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .block-two-first-child {
+    width: 100%;
+  }
+}
+
+.block-two-first-child__item-f {
+  height: 100%;
+  margin-left: 15px;
+  background-color: rgb(131, 133, 134);
+}
+
+@media screen and (max-width: 992px) {
+  .block-two-first-child__item-f {
+    margin-left: 0;
+  }
+}
+
+/* /- BLOCK TWO FIRST CHILD -/ */
+
+/* BLOCK TWO SECOND CHILD */
+
+.block-two-second-child {
+  width: 50%;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 992px) {
+  .block-two-second-child {
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .block-two-second-child {
+    margin-top: 20px;
+  }
+}
+
+.block-two-second-child__item-g {
+  height: 80%;
+  margin-bottom: 15px;
+  background-color: rgb(238, 133, 64);
+}
+
+@media screen and (max-width: 768px) {
+  .block-two-second-child__item-g {
+    margin-bottom: 20px;
+  }
+}
+
+.block-two-second-child__item-h {
+  height: 20%;
+  background-color: rgb(64, 238, 165);
+}
+
+@media screen and (max-width: 992px) {
+  .block-two-second-child__item-h {
+    height: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+/* /-  BLOCK TWO SECOND CHILD -/ */
+
+/* /-  BLOCK TWO -/ */
